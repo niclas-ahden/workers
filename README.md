@@ -9,6 +9,7 @@ because the worker has its own heap, separate from the main thread.
 I tried to overcome this by figuring out how to share the heap, but failed. Attempts are:
 
 A) Compiling with `+atomics,+mutable-globals,+bulk-memory` (see `.cargo/config.toml`) and;
+
 B) Compiling `lib` with `-Zbuild-std=std,panic_abort`.
 
 ## Running
